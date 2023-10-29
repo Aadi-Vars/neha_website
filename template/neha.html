@@ -1,0 +1,269 @@
+{% load static %}
+<html>
+<head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+<!-- google icon-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+<!-- swiper from CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+<style>
+	*{margin:0px;padding:0px;box-sizing:border-box;}
+	body{background:linear-gradient(85deg,#E49B0F,#F9629F)}
+	
+	
+	#header{overflow:auto}
+	
+	.material-symbols-outlined {
+		  font-variation-settings:
+ 		 'FILL' 0,
+  		'wght' 400,
+		  'GRAD' 0,
+ 		 'opsz' 24}
+ 		 
+	 #menu_icon{
+		 color:black;
+		 font-size:75px;
+		 padding:20px;}
+	
+	#social_media{
+		width:40vw;
+		padding:20px;
+		float:right;
+		text-align:right;}
+
+		
+	.logo{width:55px;height:auto;margin-right:20px;}
+	
+	#may_i_div{width:90vw;
+		background-color:rgba(0,0,0,0.9);
+		margin-left:5vw;
+		margin-right:5vw;
+		margin-top:50px;
+		border-radius:50px;
+		padding:20px;
+		height:fit-content;
+		overflow:auto;}
+	.heading{
+		text-align:center;
+		font-size:50px;
+		color:white;
+		padding:50px;
+		font-family: 'Tilt Neon', sans-serif;}
+		
+	
+		
+	#may_i_text{
+		width:40%;
+		heght:fit-content;
+		border:2px solid black;
+		float:right;
+		text-align:justify;
+		margin-right:5%;
+		margin-bottom:20px;
+		font-size:30px;
+		color:white;
+		font-family: 'Satisfy', cursive;}
+	
+		
+	#may_i_img{
+		float:left;
+		display:block;
+		margin-right:5%;
+		margin-left:5%;
+		width:45%;
+		height:550px;
+		border-radius:30px;
+		border:3px solid #F9629F;
+		border-top-width:5px;
+		box-shadow:5px 5px 5px white;}
+
+	
+	#swiper_subdiv{display:flex;
+		margin:10vw;
+		margin-bottom:0px;}
+	
+	#swiper_left{width:40vw;
+		line-height:50px;
+		}
+		
+	#two_lines{
+	text-align:left;
+	text-align:justify;
+	font-size:40px;
+	font-weight:550;
+	color:white;
+	padding:20px;
+	border: 3px solid white;
+	border-radius:20px;
+	border-top-width:10px;
+	font-family: 'Great Vibes', cursive;
+	font-family: 'Satisfy', cursive;}
+	
+	
+	#more_button h5{
+		font-size:20px;
+		color:white;
+		padding:25px;
+		margin-top:-50px;
+		text-decoration:none;
+		text-align:center;
+		background:white;
+		color:black;
+		width:150px;
+		border: 5px solid black;
+		border-radius:40px;
+	}
+	.swiper{
+  		width: 30%;
+		  height:fit-content;
+		  border: 5px solid black;
+		  border-top-right-radius:50px;
+		  border-bottom-left-radius:50px;}
+	
+	
+	.swiper-wrapper{width:100%}
+	.swiper-slide img{
+	width:100%;}
+	
+	#talent_div{
+		margin-top:10px;}
+	
+	#talent_video_1{	
+		display:block;
+		width:80vw;
+		height:500px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:5px;
+		border:3px solid white;
+		border-top-width:5px;
+		border-top-right-radius:30px;
+		border-bottom-left-radius:30px;
+		box-shadow:10px 10px 5px black;
+	}
+	#contact_us{font-size:35px;}
+	#footer_div{
+		background-color:black;
+		color:white;
+		margin:10px;
+		margin-top:50px;
+		height:fit-content;
+		border-radius:20px;
+		padding:20px;
+		font-size:30px;
+		font-family: 'Great Vibes', cursive;
+		font-family: 'Satisfy', cursive;}
+		
+	@media (max-width:1000px){#may_i_text{float:none;width:90%;margin-left:auto;margin-right:auto;margin-top:20px;font-size:35px;}}
+	@media (max-width:1000px){#may_i_img{float:none;width:75%;height:auto;margin-left:auto;margin-right:auto;}}
+	
+	@media (max-width:1000px){.swiper{width:45%;}}
+	
+	@media (max-width:1000px){#footer_div{font-size:25px;}}
+	
+	@media (max-width:1000px){#contact_us{font-size:30px;}}
+
+</style>
+<title> Neha</title>
+</head>
+<body>
+<div id='header'>
+<div id="social_media">
+	<a href="https://www.linkedin.com/in/neha-dewangan-887770242?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img id="linkedin_icon" class="logo" src="{% static '/img/linkedin.png' %}"></a>
+	<a href="https://instagram.com/_nehadewangan28_?igshid=MzRlODBiNWFlZA=="><img id="instagram_icon" class="logo" src="{% static '/img/instagram.png' %}"></a>
+</div>
+
+</div>
+<div id="may_i_div">
+	<h2 id="may_i_head" class="heading">Neha Dewangan</h2>
+
+	<div id="may_i_img_div">
+	<img id="may_i_img" src="{% static '/img/may_i.jpg' %}">
+	</div>
+	<p id="may_i_text">May I know about this girl, who is she...standing at the corner of the swiftly flowing lake...just like her beautiful eyes, waving her beautiful shiny long hair just like the cool and calm wind flowing in which she is standing, and see her gorgeous carrot pink dress in which she is glooming like a princess from heaven...blessed by the goddesses of beauty...<br>May I know her name, May I get lost in her beautiful lake seeming eyes, May I wave my hands through her shiny gorgeous hair??<br>May I??
+</div>
+
+<div id="swiper_div">
+	<div class="heading"><p>Gallery</p></div>
+	<div id="swiper_subdiv">
+	<div id="swiper_left">
+		<p id="two_lines">Ye chand sa roshan chehara<br>Zulfon ka rang sunehara<br>Ye zil si nili aankhe koi<br>Raaj hain in mein gehara<br>Taarif karu kya us ki<br>Jis ne tumhe banaya</p>
+		<br><br><a id="more_button" href="gallery"><h5>More...</h5></a>
+	</div>
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="{% static '/neha_img/swiper_img_1.jpg' %}"></div>
+    <div class="swiper-slide"><img src="{% static '/neha_img/swiper_img_2.jpg' %}"></div>
+    <div class="swiper-slide"><img src="{% static '/neha_img/swiper_img_3.jpg' %}"></div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+</div>
+</div>
+
+<div id="talent_div">
+	<p class="heading">Talent</p>
+	<a href="https://youtu.be/keVw9jAdahc?si=IDZitwSHHaR1y8nd"><img id="talent_video_1" src="{% static '/img/video_banner.jpg' %}"></a>
+</div>
+
+<div id="footer_div">
+<p id="contact_us">Contact Us</p><br>
+	<span class="material-symbols-outlined" style="color:white,font-size:40px;">
+		call</span>   +916265568287<br>
+
+	<span class="material-symbols-outlined">
+		mail </span>  nehadewangan281003@gmail.com<br>
+
+	<span class="material-symbols-outlined">
+my_location</span>  Patora,Durg,Chattisgarh
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>const swiper = new Swiper('.swiper', {
+	autoplay:{
+		delay: 3000,
+		disableOnInteraction:false,
+	},
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+ 
+   
+</script>
+
+
+</body>
+
+</html>

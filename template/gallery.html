@@ -1,0 +1,78 @@
+{% load static %}
+{% static "neha_img" as baseUrl %}
+
+<html>
+<head>
+<title> Gallery</title>
+<!-- google icon-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<style>
+	*{margin:0px;padding:0px;box-sizing:border-box;}
+	body{background:linear-gradient(85deg,#E49B0F,#F9629F)}
+	
+	.material-symbols-outlined {
+		  font-variation-settings:
+			  'FILL' 0,
+ 			 'wght' 400,
+ 			 'GRAD' 0,
+  			'opsz' 24
+}
+	#home_icon{
+		font-size:60px;
+		color:white;
+		padding:10px;
+		margin-left:10px;}
+	
+	.heading{
+		text-align:center;
+		font-size:50px;
+		color:white;
+		padding:50px;
+		font-family: 'Tilt Neon', sans-serif;
+		margin-top:-50px;}
+	
+	#gallery_div{display:flex;
+		flex-wrap:wrap;
+		justify-content:center;
+		margin-bottom:5vh;
+		margin-left:-5vw;
+		}
+		
+	#img_container{
+		margin-top:100px;
+		margin-left:5vw;
+		}
+		
+		
+	#neha_img{
+		width:15vw;
+		height:auto;
+		border: 5px solid white;
+		border-top-width:10px;
+		border-top-right-radius:50px;
+		border-bottom-left-radius:50px;
+		box-shadow:10px 10px 5px;
+		}
+		
+	@media (max-width:1000px){#neha_img{width:25vw;}}
+	
+</style>
+</head>
+<body>
+
+<div id="header">
+<a href="/">
+	<span id="home_icon" class="material-symbols-outlined"> home </span></a>
+	<p class="heading"> Gallery</p>
+	
+</div>
+
+<div id="gallery_div">
+	{% for obj in object %}
+	<div id="img_container">
+		<img id="neha_img" src="{{baseUrl}}/{{obj}}"></img>
+	</div>
+	{% endfor %}
+</div>
+</body>
+</html>
